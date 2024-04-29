@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <!-- Form for editing a todo item -->
+      <form action="{{url_for('edit', index=index) }}" method="post">
+          <!-- Input field to edit the todo task, pre-filled with the current task -->
+          <input type="text" name="todo" value="{{todo['task']}}">
+          <!-- Button to submit the edited task -->
+          <button type="submit">Save<button>
+      </form>
+</body>
+</html>
